@@ -6,14 +6,26 @@ public class House {
     private String typePool;
     private String typeGarden;
 
-    public House(int windows, int doors, int rooms, String typeGarage, String
-    typePool, String typeGarden) {
-    this.windows = windows;
-    this.doors = doors;
-    this.rooms = rooms;
-    this.typeGarage = typeGarage;
-    this.typePool = typePool;
-    this.typeGarden = typeGarden;
+    public House(int windows, int doors, int rooms, String typeGarage, String typePool, String typeGarden) {
+        this.windows = windows;
+        this.doors = doors;
+        this.rooms = rooms;
+        this.typeGarage = typeGarage;
+        this.typePool = typePool;
+        this.typeGarden = typeGarden;
+    }
+
+    public House(int windows, int doors, int rooms) {
+        this.windows = windows;
+        this.doors = doors;
+        this.rooms = rooms;
+    }
+
+    public House(int windows, int doors, int rooms, String typeGarage) {
+        this.windows = windows;
+        this.doors = doors;
+        this.rooms = rooms;
+        this.typeGarage = typeGarage;
     }
 
     public House() {

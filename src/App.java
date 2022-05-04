@@ -26,5 +26,9 @@ public class App {
 
         System.out.println(house);
 
+        House house2 = new House(2, 3, 4, "2x6", "pool", "garden");
+        System.out.println(house2);
+        House house3 = new House(2, 3, 4, null, null, null);
+        System.out.println(house3);
     }
 }
