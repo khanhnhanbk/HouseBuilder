@@ -5,22 +5,20 @@ public abstract class HouseBuilder {
         return house;
     }
 
-    public void createHouse() {
+    public HouseBuilder createHouse() {
         house = new House();
-    }
-
-    public HouseBuilder buildDoors(int doors) {
-        house.setDoors(doors);
         return this;
     }
+
+    public abstract HouseBuilder buildDoors(int doors);
 
     public abstract HouseBuilder buildWindows(int windows);
 
     public abstract HouseBuilder buildRooms(int rooms);
 
-    public abstract HouseBuilder buildGarage(String hasGarage);
+    public abstract HouseBuilder buildGarage(String garage);
 
-    public abstract HouseBuilder buildPool(String hasPool);
+    public abstract HouseBuilder buildPool(String pool);
 
-    public abstract HouseBuilder buildGarden(String hasGarden);
+    public abstract HouseBuilder buildGarden(String garden);
 }

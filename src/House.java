@@ -6,32 +6,45 @@ public class House {
     private String typePool;
     private String typeGarden;
 
+    public House(int windows, int doors, int rooms, String typeGarage, String
+    typePool, String typeGarden) {
+    this.windows = windows;
+    this.doors = doors;
+    this.rooms = rooms;
+    this.typeGarage = typeGarage;
+    this.typePool = typePool;
+    this.typeGarden = typeGarden;
+    }
+
+    public House() {
+    }
+
     public int getWindows() {
         return windows;
     }
 
-    public String isHasGarden() {
+    public String getTypeGarden() {
         return typeGarden;
     }
 
-    public void setHasGarden(String hasGarden) {
-        this.typeGarden = hasGarden;
+    public void setTypeGarden(String typeGarden) {
+        this.typeGarden = typeGarden;
     }
 
-    public String isHasPool() {
+    public String getTypePool() {
         return typePool;
     }
 
-    public void setHasPool(String hasPool) {
-        this.typePool = hasPool;
+    public void setTypePool(String typePool) {
+        this.typePool = typePool;
     }
 
-    public String isHasGarage() {
+    public String getTypeGarage() {
         return typeGarage;
     }
 
-    public void setHasGarage(String hasGarage) {
-        this.typeGarage = hasGarage;
+    public void setTypeGarage(String typeGarage) {
+        this.typeGarage = typeGarage;
     }
 
     public int getRooms() {
@@ -54,15 +67,9 @@ public class House {
         this.windows = windows;
     }
 
-    // toString() method
+    @Override
     public String toString() {
-        return "House{" +
-                "windows=" + windows +
-                ", doors=" + doors +
-                ", rooms=" + rooms +
-                ", hasGarage=" + typeGarage +
-                ", hasPool=" + typePool +
-                ", hasGarden=" + typeGarden +
-                '}';
+        return "House [windows=" + windows + ", doors=" + doors + ", rooms=" + rooms + ", typeGarage=" + typeGarage
+                + ", typePool=" + typePool + ", typeGarden=" + typeGarden + "]";
     }
 }
