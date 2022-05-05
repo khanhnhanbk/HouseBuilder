@@ -6,6 +6,15 @@ public class House {
     private String typePool;
     private String typeGarden;
 
+    public House(HouseBuilder builder) {
+        this.windows = builder.getWindows();
+        this.doors = builder.getDoors();
+        this.rooms = builder.getRooms();
+        this.typeGarage = builder.getTypeGarage();
+        this.typePool = builder.getTypePool();
+        this.typeGarden = builder.getTypeGarden();
+    }
+
     public House(int windows, int doors, int rooms, String typeGarage, String typePool, String typeGarden) {
         this.windows = windows;
         this.doors = doors;
